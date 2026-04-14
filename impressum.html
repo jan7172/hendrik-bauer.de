@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum – Hendrik Bauer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
+  <style>
+    .legal-page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 130px 2rem 100px;
+    }
+    .legal-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .legal-page h1 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.08;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+    .legal-date {
+      font-size: 0.8rem;
+      color: var(--text-tertiary);
+      margin-bottom: 3.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .legal-section {
+      margin-bottom: 2.5rem;
+    }
+    .legal-section h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+    }
+    .legal-section p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 0.75rem;
+    }
+    .legal-section p:last-child { margin-bottom: 0; }
+    .legal-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      color: var(--accent);
+      text-decoration: none;
+      margin-bottom: 3rem;
+      transition: opacity 0.2s;
+    }
+    .legal-back:hover { opacity: 0.7; }
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 2.5rem 0;
+    }
+    .phone-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    .phone-masked {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Hendrik Bauer</a>
+      <ul class="nav-links">
+        <li><a href="index.html#leistungen">Leistungen</a></li>
+        <li><a href="index.html#ueber">Über mich</a></li>
+        <li><a href="index.html#vorteile">Vorteile</a></li>
+        <li><a href="index.html#kontakt" class="nav-cta">Anfragen</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Farbschema wechseln">
+        <span class="icon-sun">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </span>
+        <span class="icon-moon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="legal-page">
+
+    <a href="index.html" class="legal-back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+      Zurück zur Startseite
+    </a>
+
+    <p class="legal-eyebrow">Rechtliches</p>
+    <h1>Impressum</h1>
+    <p class="legal-date">Angaben gemäß § 5 TMG</p>
+
+    <div class="legal-section">
+      <h2>Anbieter</h2>
+      <p>Hendrik Bauer</p>
+      <div class="phone-row" style="margin-top:0.4rem;">
+        <span id="impAddressDisplay" style="font-size:0.92rem;color:var(--text-secondary);line-height:1.75;">
+          •••••••••• ••<br>
+          ••••• Herne<br>
+          Deutschland
+        </span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="legal-section">
+      <h2>Kontakt</h2>
+      <div class="phone-row">
+        <span id="impPhoneDisplay" style="font-size:0.92rem;color:var(--text-secondary);letter-spacing:0.06em;">+49 ••• •••••••</span>
+        <span id="impEmailDisplay" style="font-size:0.92rem;color:var(--text-secondary);letter-spacing:0.06em;">•••••••••••@hendrik-bauer.de</span>
+        <button id="impRevealBtn" style="
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+          font-size: 0.78rem;
+          font-weight: 500;
+          color: var(--accent);
+          background: var(--accent-subtle);
+          border: 1px solid var(--accent-border);
+          border-radius: 980px;
+          padding: 0.3rem 0.85rem;
+          cursor: pointer;
+          width: fit-content;
+          transition: background 0.2s;
+        ">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          Kontaktdaten &amp; Details anzeigen
+        </button>
+        <div id="impTurnstileWrapper" style="display:none; margin-top:0.5rem;">
+          <div id="impTurnstileWidget"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="legal-section">
+      <h2>Gewerbeanmeldung</h2>
+      <p>
+        Gewerbeart: Handwerkliche Dienstleistungen<br>
+        Zuständige Behörde: Gewerbeamt der Stadt Herne<br>
+        Steuernummer: <span id="impSteuernummerDisplay" style="color:var(--text-secondary);">•••/••••/••••</span><br>
+        Kleinunternehmer gemäß § 19 UStG – keine Umsatzsteuer-ID
+      </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="legal-section">
+      <h2>Verantwortlich für den Inhalt</h2>
+      <p>Hendrik Bauer – Kontaktdaten siehe oben</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="legal-section">
+      <h2>Haftungsausschluss</h2>
+      <p>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.</p>
+      <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="legal-section">
+      <h2>Urheberrecht</h2>
+      <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2025 Hendrik Bauer – Handwerk aus Herne · <a href="https://jan-bauer.de" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:0.6;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">Webseite von Jan Bauer</a></p>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    /* Turnstile nur für Impressum-Seite */
+    const impRevealBtn      = document.getElementById("impRevealBtn");
+    const impPhoneDisplay   = document.getElementById("impPhoneDisplay");
+    const impTurnstileWrapper = document.getElementById("impTurnstileWrapper");
+    const impTurnstileWidget  = document.getElementById("impTurnstileWidget");
+
+    const IMP_WORKER_URL = "https://phone-reveal.jan691425.workers.dev";
+    let impWidgetRendered = false;
+
+    impRevealBtn.addEventListener("click", () => {
+      impRevealBtn.style.display = "none";
+      impTurnstileWrapper.style.display = "block";
+
+      if (!impWidgetRendered) {
+        impWidgetRendered = true;
+        turnstile.render(impTurnstileWidget, {
+          sitekey: "0x4AAAAAAC1TDpWNQbR8roof",
+          theme: document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light",
+          callback: async (token) => {
+            impTurnstileWrapper.innerHTML = `<p style="font-size:0.82rem;color:var(--text-secondary);">Wird geprüft…</p>`;
+            try {
+              const res  = await fetch(IMP_WORKER_URL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ token }),
+              });
+              const data = await res.json();
+              if (data.success && data.phone) {
+                impTurnstileWrapper.style.display = "none";
+
+                // Telefon anzeigen
+                const d = data.phone.replace(/\D/g, "");
+                const formatted = d.startsWith("49") && d.length === 12
+                  ? `+49 ${d.slice(2,5)} ${d.slice(5)}`
+                  : data.phone;
+                impPhoneDisplay.innerHTML = `<a href="tel:${data.phone}" style="color:var(--accent);font-weight:500;text-decoration:none;">${formatted}</a>`;
+
+                // Adresse anzeigen
+                if (data.address) {
+                  const addrEl = document.getElementById("impAddressDisplay");
+                  if (addrEl) addrEl.innerHTML = data.address.split("|").join("<br>");
+                }
+
+                // E-Mail anzeigen
+                if (data.email) {
+                  const emailEl = document.getElementById("impEmailDisplay");
+                  if (emailEl) emailEl.innerHTML = `<a href="mailto:${data.email}" style="color:var(--accent);font-weight:500;text-decoration:none;">${data.email}</a>`;
+                }
+
+                // Steuernummer anzeigen
+                if (data.steuernummer) {
+                  const stNrEl = document.getElementById("impSteuernummerDisplay");
+                  if (stNrEl) stNrEl.innerHTML = data.steuernummer;
+                }
+
+                // Button ausblenden
+                impRevealBtn.style.display = "none";
+              } else {
+                impTurnstileWrapper.innerHTML = `<p style="font-size:0.82rem;color:var(--text-secondary);">Fehler – bitte Seite neu laden.</p>`;
+              }
+            } catch {
+              impTurnstileWrapper.innerHTML = `<p style="font-size:0.82rem;color:var(--text-secondary);">Fehler – bitte Seite neu laden.</p>`;
+            }
+          },
+          "error-callback": () => {
+            impTurnstileWrapper.innerHTML = `<p style="font-size:0.82rem;color:var(--text-secondary);">Fehler – bitte Seite neu laden.</p>`;
+          },
+        });
+      }
+    });
+  </script>
+</body>
+</html>
